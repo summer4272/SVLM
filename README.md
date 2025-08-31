@@ -60,9 +60,9 @@ conda env create -f environment.yml -n SVLM
 You can download the **Chinese-LLaVA-Vision-Instructions** dataset as follows:
 
 ```bash
-# 克隆数据集 (使用镜像站点下载)
-# Clone the dataset (using hf-mirror for faster access)
-git clone https://hf-mirror.com/datasets/LinkSoul/Chinese-LLaVA-Vision-Instructions
+# 克隆数据集 
+# Clone the dataset 
+git clone https://huggingface.co/datasets/Summer1231/SVLM-Data
 ```
 
 ---
