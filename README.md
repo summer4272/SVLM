@@ -30,6 +30,12 @@ This project builds a **vision-language unified multimodal model from scratch**,
 git clone https://github.com/summer4272/SVLM.git
 cd SVLM
 ```
+第2步
+```bash
+#加载dinov2-base模型
+git clone https://huggingface.co/facebook/dinov2-base
+
+```
 
 
 ---
