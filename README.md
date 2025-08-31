@@ -25,3 +25,24 @@ This project builds a **vision-language unified multimodal model from scratch**,
 ## 📈 训练效果曲线 (Training Curves)
 
 ![训练曲线](Image/train.png)
+
+---
+## 🚀 快速开始 (Quickstart)
+
+只需几行代码即可运行一个简单的推理示例：  
+Run a simple inference demo in just a few lines:
+
+```python
+from svlm import SVLMModel
+
+# 初始化模型
+model = SVLMModel.from_pretrained("YourModelPath")
+
+# 输入图像和文本
+image = "Image/demo.png"
+text = "What is in the picture?"
+
+# 执行推理
+output = model.predict(image, text)
+
+print("Result:", output)
