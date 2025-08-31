@@ -14,7 +14,10 @@ This project builds a **vision-language unified multimodal model from scratch**,
 - 🌐 简洁高效 / Compact & efficient  
 
 ---
+## 🏗 模型结构示意 (Model Architecture)
+![模型结构](Image/MODEL.png)
 
+---
 ## 📷 效果展示 (Project Showcase)
 
 ![结果演示](Image/videotogif.gif)
