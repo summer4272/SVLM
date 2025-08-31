@@ -1,6 +1,5 @@
 # Small Vision Language Model (SVLM)
 
----
 ## 🏗 模型结构示意 (Model Architecture)
 ![模型结构](Image/MODEL.png)
 
