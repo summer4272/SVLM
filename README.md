@@ -24,21 +24,26 @@ This project builds a **vision-language unified multimodal model from scratch**,
 ---
 ## 🚀 快速开始 (Quickstart)
 
-第1步 模型配置
+## 🔧 第 1 步：模型配置 (Step 1: Model Setup)
 
 ```bash
-#克隆模型文件
+# 克隆本项目代码仓库
+# Clone the project repository
 git clone https://github.com/summer4272/SVLM.git
 cd SVLM
 ```
-
-```bash
-#加载dinov2-base模型
+```
+# 下载 DINOv2-base 模型 (视觉编码器)
+# Download the DINOv2-base model (vision encoder)
 git clone https://huggingface.co/facebook/dinov2-base
 
 ```
+```
+# 下载 AutoProcessor（仅需 tokenizer 配置，可不下载完整模型）
+# Download AutoProcessor (only tokenizer is needed; model weights can be omitted)
+git clone https://huggingface.co/llava-hf/llava-1.5-7b-hf
 
-
+```
 ---
 
 ## 📈 训练效果曲线 (Training Curves)
