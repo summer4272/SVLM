@@ -21,3 +21,7 @@ This project builds a **vision-language unified multimodal model from scratch**,
 
 ![结果演示](Image/videotogif.gif)
 
+
+## 📈 训练效果曲线 (Training Curves)
+
+![训练曲线](Image/train.png)
