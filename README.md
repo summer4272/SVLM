@@ -64,7 +64,78 @@ You can download the **Chinese-LLaVA-Vision-Instructions** dataset as follows:
 # Clone the dataset 
 git clone https://huggingface.co/datasets/Summer1231/SVLM-Data
 ```
+## 🎯 训练指令 (Training Commands)
 
+本项目采用 **双阶段训练**：  
+This project uses a **two-stage training** strategy.
+
+---
+
+### 🔵 阶段一：训练视觉塔 (Stage 1: Vision-Heavy Training)
+
+```bash
+python train.py train \
+  --stage stage1 \
+  --model_dir "llava-1.5-7b-hf" \
+  --dinov2_path "dinov2-base" \
+  --data_dir "Svlmdata" \
+  --jsonl_name "pretrain_vlm_data.jsonl" \
+  --image_dir "pretrain_images" \
+  --unfreeze_lm_top_layers 2 \
+  --train_text_embed true \
+  --train_dino_proj true \
+  --batch_size 2 \
+  --epochs 5 \
+  --steps_per_epoch 1500 \
+  --wandb_project "vlm-train" \
+  --run_name "s1-vision-heavy"
+```
+
+### 🟢 阶段二：训练语言侧 (Stage 2: Text-Heavy Training)
+```bash
+python train.py train \
+  --stage stage2 \
+  --model_dir "llava-1.5-7b-hf" \
+  --dinov2_path "dinov2-base" \
+  --data_dir "Svlmdata" \
+  --jsonl_name "sft_vlm_data.jsonl" \
+  --image_dir "sft_images" \
+  --unfreeze_lm_top_layers 14 \
+  --train_text_embed true \
+  --train_dino_proj false \
+  --batch_size 4 \
+  --epochs 10 \
+  --steps_per_epoch -1 \
+  --ckpt "s1-vision-heavy/epoch.pt" \
+  --wandb_project "vlm-train" \
+  --run_name "s2-text-heavy"
+```
+### 🧪 验证模型 (Validation)
+```bash
+python train.py validate \
+  --ckpt "s2-text-heavy/epoch.pt" \
+  --model_dir "llava-1.5-7b-hf" \
+  --dinov2_path "dinov2-base" \
+  --data_dir "Svlmdata" \
+  --jsonl_name "sft_vlm_data.jsonl" \
+  --image_dir "sft_images" \
+  --steps_per_epoch -1 \
+  --amp_dtype bfloat16
+
+```
+### 💡 推理 (Inference)
+```bash
+python train.py infer \
+  --ckpt "epoch.pt" \
+  --model_dir "llava-1.5-7b-hf" \
+  --dinov2_path "dinov2-base" \
+  --image "your_image.jpg" \
+  --prompt "请根据图像回答：这张图里有什么？" \
+  --d_in 4096 \
+  --d_model 1024 \
+  --n_heads 4 \
+  --n_layers 14
+```
 ---
 
 ## 📈 训练效果曲线 (Training Curves)
