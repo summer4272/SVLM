@@ -54,6 +54,16 @@ The project provides an `environment.yml` file, which allows you to create the C
 # Create a new Conda environment named "SVLM" from environment.yml
 conda env create -f environment.yml -n SVLM
 ```
+## 📂 第 3 步：下载训练数据集 (Step 3: Download Training Dataset)
+
+项目使用 **Chinese-LLaVA-Vision-Instructions** 数据集。  
+You can download the **Chinese-LLaVA-Vision-Instructions** dataset as follows:
+
+```bash
+# 克隆数据集 (使用镜像站点下载)
+# Clone the dataset (using hf-mirror for faster access)
+git clone https://hf-mirror.com/datasets/LinkSoul/Chinese-LLaVA-Vision-Instructions
+```
 
 ---
 
