@@ -139,7 +139,8 @@ python train.py infer \
 ---
 
 ## 📈 训练效果曲线 (Training Curves)
-```
-这里仅仅展示了第一阶段训练曲线
-```
+<sub><span style="opacity:0.6">这里仅仅展示了第一阶段训练曲线</span></sub>
+<sub><span style="opacity:0.6">Only the first-stage training curves are shown here</span></sub>
+
+
 ![训练曲线](Image/train.png)
