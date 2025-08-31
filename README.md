@@ -17,6 +17,5 @@ This project builds a **vision-language unified multimodal model from scratch**,
 
 ## 📷 效果展示 (Project Showcase)
 
-### 图片 (Images)  
-![训练演示](Image/videotogif.gif)
+![结果演示](Image/videotogif.gif)
 
