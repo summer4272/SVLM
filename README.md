@@ -1,7 +1,5 @@
 # Small Vision Language Model (SVLM)
 
-[English](#small-vision-language-model-svlm) | [中文](#庖丁解牛-dissecting-the-ox)
-
 ---
 
 ## 庖丁解牛 (Dissecting the Ox)
