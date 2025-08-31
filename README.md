@@ -1,5 +1,8 @@
 # Small Vision Language Model (SVLM)
 
+⭐ 如果你觉得本项目有帮助，请不要吝啬，点一个 Star 支持我们！  
+⭐ If you find this project useful, please consider giving it a Star!
+
 ## 🏗 模型结构示意 (Model Architecture)
 ![模型结构](Image/MODEL.png)
 
@@ -144,3 +147,9 @@ python train.py infer \
 
 
 ![训练曲线](Image/train.png)
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=summer4272/SVLM&type=Date)](https://star-history.com/#summer4272/SVLM&Date)
+
+
