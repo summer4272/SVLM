@@ -44,6 +44,17 @@ git clone https://huggingface.co/facebook/dinov2-base
 git clone https://huggingface.co/llava-hf/llava-1.5-7b-hf
 
 ```
+## ⚙️ 第 2 步：环境配置 (Step 2: Environment Setup)
+
+项目提供了 `environment.yml` 文件，可直接基于该文件创建 Conda 环境。  
+The project provides an `environment.yml` file, which allows you to create the Conda environment directly.
+
+```bash
+# 使用 environment.yml 创建名为 SVLM 的环境
+# Create a new Conda environment named "SVLM" from environment.yml
+conda env create -f environment.yml -n SVLM
+```
+
 ---
 
 ## 📈 训练效果曲线 (Training Curves)
