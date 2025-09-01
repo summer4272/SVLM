@@ -151,5 +151,5 @@ python train.py infer \
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=summer4272/SVLM&type=Date)](https://star-history.com/#summer4272/SVLM&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=summer4272/SVLM&type=Date)](https://www.star-history.com/#summer4272/SVLM&Date)
 
