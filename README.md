@@ -148,8 +148,5 @@ python train.py infer \
 
 ![训练曲线](Image/train.png)
 
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=summer4272/SVLM&type=Date)](https://star-history.com/#summer4272/SVLM&Date)
 
 
